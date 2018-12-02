@@ -21,3 +21,9 @@ Once you have the gpg key, get its id with `gpg --list-keys`. Then export the pu
 `gpg --export THE_KEY_ID >key.pub`. Finally, add your key in the `hozana/keyring` repository.
 
 Then ask someone who already has access to the keys to give access to your key in the pass.
+
+Once the repo has been re-signed with your new public key, you can clone the pass repository in
+`~/.password-store`:
+```bash
+git clone git@github.com:hozana/pass.git ~/.password-store
+```
